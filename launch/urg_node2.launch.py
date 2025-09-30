@@ -38,7 +38,7 @@ def generate_launch_description():
 
     # パラメータファイルのロード
     with open(config_file_path, 'r') as file:
-        config_params = yaml.safe_load(file)['urg_node2']['ros__parameters']
+        config_params = yaml.safe_load(file)['hokuyo']['ros__parameters']
 
     # urg_node2をライフサイクルノードとして起動
     lifecycle_node = LifecycleNode(
